@@ -6,7 +6,10 @@ if wezterm.config_builder then config = wezterm.config_builder() end
 config.color_scheme = 'Black Metal (Burzum) (base16)'
 
 -- font
-config.font = wezterm.font 'JetBrains Mono'
+config.adjust_window_size_when_changing_font_size = false
+config.font = wezterm.font("CaskaydiaCove Nerd Font Mono", {weight="Regular", stretch="Normal", style="Normal"})
+config.font_size = 13
+--config.font = wezterm.font 'JetBrains Mono'
 
 -- backgrond image
 config.window_background_image = '/home/andrii/Pictures/wallpapers/ciri-cropped.jpg'
@@ -61,13 +64,6 @@ config.keys = {
 
 --[[
 ===== COMMENTED =====
-
-for now i don't use this font in wezterm cause it smaller than current font i use.
-changing font size in wezterm affects windows size.
-issue is open for this.
--- font
-config.font = wezterm.font 'CaskaydiaCove Nerd Font Mono'
-config.font_size = 13 
 
 -- kitty graphics protocol
 enable_kitty_graphics=true
