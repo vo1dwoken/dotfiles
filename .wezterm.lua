@@ -2,14 +2,11 @@ local wezterm = require 'wezterm'
 local config = {}
 if wezterm.config_builder then config = wezterm.config_builder() end
 
-
 -- color scheme
 config.color_scheme = 'Black Metal (Burzum) (base16)'
 
-
 -- font
 config.font = wezterm.font 'JetBrains Mono'
-
 
 -- backgrond image
 config.window_background_image = '/home/andrii/Pictures/wallpapers/ciri-cropped.jpg'
@@ -19,19 +16,15 @@ config.window_background_image_hsb = {
   saturation = 1.0, -- default
 }
 
-
 -- background opacity (default value)
 config.window_background_opacity = 1
-
 
 -- tab bar
 config.use_fancy_tab_bar = false
 config.hide_tab_bar_if_only_one_tab = true
 
-
 -- keys
 local act = wezterm.action
-
 config.keys = {
   {
     key = 'LeftArrow',
@@ -66,9 +59,7 @@ config.keys = {
 
 }
 
-
 --[[
-
 ===== COMMENTED =====
 
 for now i don't use this font in wezterm cause it smaller than current font i use.
@@ -77,7 +68,6 @@ issue is open for this.
 -- font
 config.font = wezterm.font 'CaskaydiaCove Nerd Font Mono'
 config.font_size = 13 
-
 
 -- kitty graphics protocol
 enable_kitty_graphics=true
@@ -99,7 +89,6 @@ config.window_background_gradient = {
 config.window_background_gradient = {
 preset = 'Viridis',
 }
-
 --]]
 
 return config
